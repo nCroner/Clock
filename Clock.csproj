@@ -14,13 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common.csproj" />
+    <PackageReference Include="nCroner.Common" Version="1.0.0" />
   </ItemGroup>
-
-	<Target Name="CopyDllContent" AfterTargets="AfterBuild">
-		<Copy SourceFiles="bin\Debug\netstandard2.1\Clock.dll" DestinationFolder="..\..\nCroner\Plugins\Clock" />
-		<Copy SourceFiles="bin\Debug\netstandard2.1\Clock.pdb" DestinationFolder="..\..\nCroner\Plugins\Clock" />
-		<Copy SourceFiles="bin\Debug\netstandard2.1\Clock.deps.json" DestinationFolder="..\..\nCroner\Plugins\Clock" />
-	</Target>
 
 </Project>
